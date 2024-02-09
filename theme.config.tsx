@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
     link: 'https://scintilla.network',
   },
   chat: {
-    link: 'https://discord.gg/JZHXsXUUt2',
+    link: 'https://discord.gg/3kPvEWNrXE',
   },
   docsRepositoryBase: 'https://github.com/Scintilla-Network/docs.scintilla.network',
   footer: {
