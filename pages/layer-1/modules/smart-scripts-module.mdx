@@ -1,0 +1,59 @@
+# Smart Scripts Module
+
+## Overview
+
+Smart Scripts offer a flexible way to execute JavaScript code on the server side, within a safe, sandboxed environment.
+Designed for efficiency and scalability, these scripts can be pre-paid, allowing for execution at a later time without real-time interaction—similar to how Smart Contracts operate.
+Unlike traditional scripts that run continuously, Smart Scripts can be executed on demand, especially in response to specific data changes, through the Smart Data Trigger mechanism.
+
+This innovative approach is particularly useful for:
+
+- Automating tasks based on data changes without manual intervention
+- Implementing complex business logic that responds dynamically to blockchain state
+- Enhancing security by isolating script execution in a sandboxed environment
+- Allowing for fast-paced development and deployment of new features (providing with function atomic-level updates capabilities)
+
+## How It Works
+
+Smart Scripts are created and deployed by users, who specify the conditions under which the scripts are triggered. These conditions can range from simple, such as a time-based trigger, to complex, like data-driven events on the blockchain.
+
+```jsx
+function myCounter() {
+  console.log("Smart Script executed!");
+  let counter = 1;
+  return {
+    counter,
+    increment: function() {
+      counter++;
+      return counter;
+    },
+  }
+}
+```
+
+It will then be deployed in its own isolated environment and accessible via its Registry address (user.scintilla/apps/myCounter).
+
+The SDK provides a simple way to interact with Smart Scripts, allowing users to execute them, pass parameters, and retrieve the results.
+
+### Deploying a Smart Script
+
+Once deployed, the scripts are executed in a secure, isolated environment on the server. Users pre-pay for the execution, ensuring that the scripts can run without further financial transactions or manual triggers.
+
+This provides users with :
+
+- Flexibility: Execute scripts on-demand or automatically based on predefined conditions.
+- Security: Sandboxed execution environment protects the main application and data integrity.
+- Cost-Efficiency: Pre-paid model eliminates the need for continuous transaction fees.
+
+**Use Cases:**
+Smart Scripts can be applied in various scenarios, such as:
+
+- Data Validation: Automatically check and correct incoming data for consistency and accuracy.
+- Automated Alerts: Send notifications based on specific blockchain events or state changes.
+- Decentralized Oracles: Update smart contracts with real-world data in a secure and automated manner.
+
+### Getting Started
+
+*For the purpose of this guide, we will use the `@scintilla/sdk` package to interact with the Smart Scripts module.*
+
+*Pending the release of the SDK for further details.*

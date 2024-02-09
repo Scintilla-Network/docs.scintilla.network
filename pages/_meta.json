@@ -1,0 +1,15 @@
+{
+  "index": "Introduction",
+  "layer-0": "Layer 0",
+  "layer-1": "Layer 1",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://scintilla.network/contact",
+    "newWindow": true
+  }
+}

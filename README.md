@@ -1,1 +1,1 @@
-# docs.scintilla.network
+# Docs
