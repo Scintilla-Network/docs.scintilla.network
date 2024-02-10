@@ -15,5 +15,11 @@
     "type": "page",
     "href": "https://scintilla.network/contact",
     "newWindow": true
+  },
+  "website": {
+    "title": "Website ↗",
+    "type": "page",
+    "href": "https://scintilla.network",
+    "newWindow": true
   }
 }
