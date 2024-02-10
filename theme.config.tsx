@@ -13,6 +13,15 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Scintilla Network Documentation',
   },
+  head: (
+      <>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Scintilla-Network: Protocol and Usage Documentation" />
+        <meta name="og:title" content="Scintilla-Network: Protocol and Usage Documentation" />
+        <meta property="og:suffix" content="- Scintilla-Network" />
+      </>
+  ),
+  useNextSeoProps: () => ({ titleTemplate: '%s – Scintilla-Network' }),
 }
 
 export default config
