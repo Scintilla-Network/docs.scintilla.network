@@ -1,14 +1,32 @@
 ## Consensus Machine
-
-The consensus machine application is a specific tool that allow the creation of new consensus.
-Those are programmable (- via smart-scripts), or fetchable (- via oracles) and can be used to create a new consensus.
+The Consensus Machine within the Scintilla Network introduces a novel approach to establishing consensus mechanisms, offering the flexibility to design and implement consensus protocols that can be either programmatically defined through smart-scripts or dynamically sourced from external oracles.
+This versatility opens up a realm of possibilities for consensus creation, catering to the unique needs of various decentralized applications and systems.
 
 ### Consensus Machine - Smart Scripts
+Smart Scripts represent a powerful method for crafting new consensus mechanisms.
+By authoring scripts that are executed within the Smart Script Module, developers can define bespoke consensus logic tailored to specific application requirements.
 
-The smart scripts are a way to create a new consensus by writing a script that will be executed by the smart script module.
-The execution of the module is customizable to ensure a variety of nodes perform the same computation, and the result is then used to agree on a new consensus.
+This process allows for:
+
+- **Customizable Execution**: Ensuring that a diverse set of nodes can perform identical computations, thereby facilitating a unified agreement on the consensus outcome.
+- **Programmatic Flexibility**: Offering developers the ability to script complex consensus mechanisms that can adapt to the evolving needs of their applications.
+
+The Smart Script Module's execution environment is designed to be both secure and efficient, ensuring that consensus mechanisms are reliably and consistently applied across the network.
 
 ### Consensus Machine - Oracles
+Oracles introduce an external dimension to consensus creation, enabling the network to achieve consensus based on real-world data or conditions outside the blockchain.
 
-The oracles are a way to create a new consensus by fetching data from a specific source.
-The data is then stored into the Data Storage Module and can be integrated to ensure the oracle request is performed upon a data change trigger or a smart-script call.
+This approach involves:
+
+- **Data Fetching**: Oracles retrieve data from designated external sources, which is then processed and stored within the Data Storage Module.
+**Dynamic Integration**: The integration of oracle-sourced data into the consensus process can be triggered by specific events, such as changes in the data landscape or calls from smart scripts.
+
+
+This method leverages the power of external information, allowing the network to form consensus based on a wide range of inputs and conditions, thus enhancing the adaptability and applicability of the consensus mechanisms within the Scintilla ecosystem.
+
+
+## Consensus Machine - Use Cases
+
+The Consensus Machine stands as a testament to the Scintilla Network's innovative and flexible approach to consensus.
+By enabling the creation of consensus mechanisms through both smart scripts and oracles, the network empowers developers to explore new frontiers in decentralized consensus.
+Whether through programmatically defined logic or real-world data integration, the Consensus Machine offers a robust toolkit for developing the next generation of consensus protocols, tailored to the diverse and dynamic needs of the decentralized world.
