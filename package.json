@@ -1,7 +1,7 @@
 {
   "name": "docs.scintilla.network",
-  "version": "0.0.1",
-  "description": "Scintilla docs",
+  "version": "1.0.0",
+  "description": "Scintilla documentation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,7 +19,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.11.10",
-    "typescript": "^4.9.3"
+    "@types/node": "20.11.17",
+    "typescript": "^5.3.3"
   }
 }
