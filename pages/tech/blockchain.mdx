@@ -1,0 +1,69 @@
+# Blockchain
+
+At the core of Scintilla is an innovative and new kind of blockchain designed from the ground up to combine a native digital currency (SCT) with fungible/non-fungible Assets and Identities together as native, first class citizens.
+
+Scintilla Network employs a circular architecture with a main banking chain (named `core.banking`), and multiples services metachains (providing additional services, such identity, network meshes,... ) orbiting around it.
+
+Those metachains offers additional services to the asset ledger providing them with identities, domain names services, documents, drive file stores and community metachains.
+Metachains have their own local consensus comprised of its own validators quorum.
+
+This system provides with a fast processing, definitive finality, provide with a single network that serves multiples structured and siloed needs, so that each metachains can properly scale-up, attached to the blockchain.
+Structurally, every data, consensus rules and network mesh have a representation within their state.
+
+Alongside with the blockchain, a metachain indexer offers routing and relay services for the network, ensuring the metachains are linked to the ledger, and provide with additional verification.
+
+The ability to have metachain directly dependents on other metachains and the ledger, provide the system with economic based incentives community services.
+
+# Actions
+
+Scintilla Network processes three main types of state actions:
+
+- Transfer: Moving assets, contracts, or documents between users.
+- Transition: Changing the state of an entity, such as a smart contract transitioning from "active" to "completed."
+- Transaction: Interactions with the network, including engaging in smart contracts.
+
+All state actions share multi-sig authorizations abilities, fee management, and signature verification, they also have included within their structure, all the indication needed for the network to relay that state actions to the proper metachain.
+
+# Consensus
+
+Scintilla Network uses a hybrid Proof of Work (PoW) and Proof of Stake (PoS) consensus mechanism.
+Within the banking ledger and some metachains, miners validates state actions, and batch them into blocks using proof-of-work (pre-commits). Miners have a target blocktime of 5 seconds.
+
+Validators certify these precommits, consolidate the different parallel generated blocks, ensure state actions order, and create new blocks every minute using PoS.
+
+Validators must stake assets and ensure service provision, with both miners and validators supported by the Network Development Kit (NDK) for new metachain creation and integration.
+
+Both nodes types are compensated for providing such services (via coinbase mint of new SCT and processing fee redistribution).
+
+# Name System
+
+Scintilla's decentralized name system (identified as `core.identity` metachain), allows pseudonymous addresses (e.g: sct15428vq2uzwhm3taey9sr9x5vm6tk78ewf57svy) to register a specific moniker based identity (e.g: alice), so they can interact in a reputation-based manner with the network, with enhanced functionality for identities created using private keys or mnemonics.
+
+Identities enable secure payments and service provision, similar to a domain name system, with layered naming for hierarchical identity management, with the root authority being the network itself (collectively represented by its nodes).
+
+Similarly to DNS, the hierarchical ordering allows for identity to have childs identity (such that `alice` can have a child identity named `alice.miner` with different set of keys attached). Within the system, `alice` and `alice.miner` are separate entities.
+Identity can have records, for miners and validators, such record are being used to advertise for the node IP addresses, and the metachain being supported by the identity.
+Those records can for instance, allow a DNS resolver to fetch the specific IP associated to a specific `alice.www` moniker.
+This system supports decentralized ledger compliance, module message routing, and secure network participation.
+
+# Time and Epochs
+
+The ledger blockchain (and the identity metachain) target a 5-second block time, ensuring rapid state distribution.
+Validators form blocks every minutes, with daily epochs updating the validator set, generating new quorums multisig addresses, and distributing rewards.
+
+This process maintains network security and allows data pruning, ensuring efficient and decentralized control.
+As Epoch represents a checkpoint and immutable state, every metachains miner will requires to reset their local PoW chains to the last epoch hash.
+
+# Decentralized Autonomous Organisation (DAO)
+
+Identities can function as DAOs with multiple members managing state actions through proposals and votes.
+
+Every multiple-members managed identity can broadcast a signed state actions to the network that will met the requirements (enough member power voted such state actions) in a synchronous way (the network only receive a single fully signed state actions).
+Asynchronous signing can be performed using proposal and votes to cast a signed state action.
+The `scintilla` identity is the identity of the network, which is funde at each new block with a small percentage of the rewards and has the proposal submission open to any network user.
+
+By submitting new proposals, entities can request funding to the `scintilla` network to fund endeavors that will serves the network. As such, the identity members governs the network's budget, funding projects that enhance the network.
+
+This decentralized governance model supports compliance, innovation, and network growth through collaborative decision-making and resource allocation while the specificity of a network-wide budget system gives the network its own economical power.
+
+This means that the network could pay for a on-duty legal agency that would offer free-of-charge for entrepreneurs the legals documents that would allows them to tokenize a real asset they wish to bring on chain.

@@ -1,56 +1,80 @@
-# Introduction
+# Introducing Scintilla
 
-Welcome to the comprehensive Documentation of Scintilla Network!
-This evolving guide is meticulously updated to encapsulate the newest features, advancements, and methodologies for building and innovating on the Scintilla Network platform.
-This documentation is a living document that will be updated regularly to reflect the latest features, improvements, and best practices for developing on the Scintilla Network.
-We encourage you to check back often and stay up-to-date with the latest developments.
+Scintilla represents a rethink of traditional blockchain technology to position assets as first-class, native citizens of a single secure, decentralized, multi-asset blockchain.
 
-## Discover Scintilla
+Traditional currencies like Bitcoin achieve this with a single native asset in a secure but slow fashion, and Web 3.0 technologies like Ethereum achieve this non-natively through additional complexity that is slow and expensive to compute and store.
 
-Scintilla heralds a new era in blockchain technology, reshaping how digital assets and computations are managed and transferred within a decentralized framework.
-The network is a beacon of modularity, scalability, efficiency and abundance, designed to empower a diverse community of developers, businesses, and users to seamlessly create, exchange, and autonomously control digital assets.
-It's a vision of a decentralized future, where transactions cost near-nothing, are instant, secure, programmable, and interoperable with other blockchains and the real-world (via RWA, appointed legal entities DAO paid and working for the network, and more).
+By combining the best of both worlds in a new thought paradigm, Scintilla provides an opinionated optimization that's economical, scalable and can satisfy the needs of the emerging Web 4.0 era, where any kind of actor can interact economically with any kind of asset in a low friction, low complexity, low cost decentralized environment.
 
-### Core Features
+Scintillas mission is to achieve a mass-scale internet of money where any actor can hold, exchange, share, transfer and monetize any kind of property, currency or asset on a single globally-decentralized blockchain, in an easy to use and economically scalable way.
 
-##### **Modularity**
+Whether you're developing innovative dApps, issuing digital tokens, or seeking to innovate new blockchain solutions for business and enterprise, Scintilla provides the tools and infrastructure necessary to bring your ideas to life.
 
-At the heart of Scintilla's design lies a robust, dual-layer architecture. Layer 1 of the network hosts an array of interoperable modules, each dedicated to specific functionalities like identity verification, smart contracts, data storage, and asset tokenization. This modularity not only enhances the network's flexibility and scalability but also enriches integration capabilities, allowing for a genuinely decentralized ecosystem where modules operate under their consensus and governance.
+# Architecture
 
-##### **Scalability**
+At the heart of Scintilla is a core ledger, a multi-asset blockchain supporting a network of community-driven metachains, all inter-connected via a secure network Mesh that provides interoperability and discovery of services within the network.
 
-Scintilla confronts the blockchain sector's paramount challenge—scalability—head-on, ensuring swift transaction processing without sacrificing security or decentralization.
-Its innovative modular architecture supports parallel processing, enabling simultaneous transactions across various modules, efficient data segregation, and network upgrades without the necessity for hard forks or community wars.
+The core blockchain is provided by a Validator network that uses a PoS consensus over a 10-minute block-time similar to Bitcoin's model, but that also certifies pre-commits from a sub-chain mined using PoW with a 5-second block-time, combining high-security for high-liquidity actions with high-frequency and performance for smaller actions.
 
-##### **EVM Compatibility**
+The core blockchain also supports native self-sovereign Identities, that provide built-in identity verification linked to user wallets, promoting regulatory compliance while protecting personal data, and enabling nuanced permission controls for decentralized applications (dApps), and native 'pay-to-name' type actions.
 
-Scintilla's Smart Contract Module ensures seamless integration with the Ethereum Virtual Machine (EVM), facilitating the effortless deployment of Ethereum-based smart contracts and dApps within the Scintilla ecosystem.
+Fully integrated Decentralized Governance is also an intrinsic property of Scintilla, with the network supporting DAOs as first-class citizens on the blockchain, with full community decision making and funding from block rewards for adding value to the Scintilla network.
 
-##### **Decentralized Identity**
+# Scintilla Currency (SCT)
 
-The Identity Module provides a robust framework for managing digital identities, leveraging blockchain's inherent security and transparency to facilitate trustless interactions and verifiable credentials.
-Reputation and public/private/role-based identities associated data are features of the module, allowing for a wider range of use cases.
+Scintilla treats all assets and identities as equal, allowing payments and other forms of economic activity in any accepted currency or asset.
 
-##### **Security**
+But 'central' to this concept is the SCT token itself.  Implemented as an asset type on the core ledger, but required at the consensus protocol level for all native incentive transactions from fees to royalties, acts as the underlying digital currency providing underlying value and liquidity for the rest of the Scintilla decentralized economy.
 
-Leveraging a dual Proof of Work (PoW)/Proof of Stake (PoS) consensus model, Scintilla enhances network security, making it resilient against Sybil attacks and anchoring its economic model to productive output.
+SCT tokens are therefore intrinsic and pivotal to the network's incentive model, serving multiple key functions such as:
 
-##### **Interoperability and Liquidity**
+- **Consensus Participation**: SCT tokens are used to participate in the network's consensus mechanism, with token holders being able to stake their tokens as a form of security and governance participation.
+- **Transaction Fees**: Transactions on the network require SCT tokens as fees, which are used to compensate validators and secure the network.
+- **Governance**: SCT token holders have governance rights, allowing them to vote on key network decisions and influence the direction of the Scintilla Network's development.
 
-Scintilla introduces a liquidity layer (via the Market Module) within the network to facilitate asset exchanges and interoperability with other blockchains.
-This allows for the development of cross-chain applications and the fluid transfer of digital assets across diverse networks, ensuring a programmable interaction with external assets.
+# Implementation
 
-### Objective
+In implementation terms, all chains are implemented as modules, with the underlying ledger, and subsequent identity, precommit and mesh chains implemented as core (consensus) modules, and metachains implemented as community modules with their own choice of consesus mechanism (which will be implemeted using Smart Script and Smart Data as per the roadmap).  
 
-Scintilla aims for the ability to create, manage, and exchange digital assets with unprecedented ease and flexibility.
-Whether you're developing innovative dApps, issuing digital tokens, or seeking to implement blockchain solutions for business, Scintilla provides the tools and infrastructure necessary to bring your ideas to life.
+This provides a fully modular architecture for developers to easily improve and innovate on Scintilla, as well as seemless upgrade processes without the needs for hard or soft forks.
 
-### For Whom is This Documentation?
+Apart from the usage of a selection of mature core crypto libraries, and implementation of the Cosmos address scheme, Scintilla's functionality has been coded entirely for Scintilla's goals from the ground-up, without forks or SDK usage, to provide a streamlined and optimized codebase to build on without legacy or redundant code, to achieve Scintilla's mission in a clean and forward-focused way.
 
-This documentation is designed for developers, tech enthusiasts, and organizations interested in exploring and utilizing the Scintilla Network.
-It provides comprehensive guides, API references, and examples to help you navigate the Scintilla ecosystem, from basic setup to advanced module integration.
+# Launch & Distribution
 
-### Support and Community Engagement
+Scintilla launches in 2024 without presale or VC, with only a 2.2% initial distribution for airdrop (0.2%) and future community incentives (2%).
+
+Scintilla launch has been pre-announced on Twitter and the Scintilla.network site since February 2024, allowing anyone to learn about Scintilla and join the airdrop via the Discord. 
+
+Emission follows a model of Epochs where there is a 8% reduction every 28 epochs (roughly 28 days) over 90 years, with long term incentives effectivly minted via burning of existing supply for certain network actions such as governance.
+
+Scintilla has a max supply of SCT 100,000,000.
+
+# Scintilla Philosophy
+
+Scintilla embodies a distinct vision for the future of a more interactive and decentralized internet:
+
+1. Our community is united by the conviction that transactions, data, and interactions should be plentiful and freely accessible.
+
+2. We advocate for a world where users have the autonomy to both offer and utilize applications without the oversight of central authorities, devoid of constraints, and minus the necessity for trust.
+
+3. By facilitating transactions at nearly zero cost, we open the door to widespread participation in the network.
+
+4. By allowing anyone to join Metachains to the network, given at least one validator's support, we pave the way for limitless and permissionless innovation.
+
+5. By simplifying the process for anyone to generate tokens, establish DAOs, their governance structures, and digital identities, we're crafting the foundations for a new, more open, transparent, and equitable internet.
+
+6. By fostering the creation of reputations within a trustless framework, linked to an automated budget system, we ensure the network's ability to self-regulate and evolve autonomously as long as it remains operational.
+
+7. Scintilla is a decentralized, open-source, scalable, permisionless, anti-fragile protocol that takes a positive stance on data and computation abundance.
+
+8. All aspects of Scintilla must assume full interoperation between both human and non-human actors, paving the way for financially-embodied AI to provide economic agency that can add value to Scintilla's network.
+
+# Inception & Team
+
+Scintilla was founded in 2024, written from the ground-up and launched by Alex Werner & Andy Freer, both key contributors to the Dash cryptocurrency, that innovated pivotal concepts such as decentralized governance, DAOs and proof-of-service nodes (such as Validators and Masternodes) and together represent a combined 25 years experience innovating within the crypto space.
+
+# Support and Community Engagement
 
 If you have any questions, feedback, or need assistance, please feel free to reach out to us at [integrations@scintilla.network], where we can assist you in the integration process and provide guidance on how to best utilize the Scintilla Network.
 You should also join the discussion on our [Discord](https://discord.gg/f2aq6XzSsf).

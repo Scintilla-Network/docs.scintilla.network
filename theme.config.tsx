@@ -4,7 +4,7 @@ import {DocsThemeConfig} from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
     logo: <span>Scintilla-Network: Protocol and Usage Documentation</span>,
     project: {
-        link: 'https://scintilla.network',
+        link: 'https://github.com/Scintilla-Network',
     },
     chat: {
         link: 'https://discord.gg/3kPvEWNrXE',
