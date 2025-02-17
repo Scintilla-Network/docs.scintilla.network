@@ -8,16 +8,46 @@
     "title": "About",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://scintilla.network/contact",
-    "newWindow": true
-  },
   "website": {
     "title": "Website ↗",
     "type": "page",
     "href": "https://scintilla.network",
+    "newWindow": true
+  },
+ "developers": {
+    "title": "Dev Doc ↗",
+    "type": "page",
+    "href": "https://developers.scintilla.network",
+    "newWindow": true
+  },
+  "sips": {
+    "title": "SIPs ↗",
+    "type": "page",
+    "href": "https://sips.scintilla.network",
+    "newWindow": true
+  },
+  "Whitepaper": {
+    "title": "Whitepaper ↗",
+    "type": "page",
+    "href": "https://whitepaper.scintilla.network",
+    "newWindow": true
+  },
+  "bridge": {
+    "title": "Bridge ↗",
+    "type": "page",
+    "href": "https://bridge.scintilla.network",
+    "newWindow": true
+  },
+  "extensions": {
+    "title": "Extension ↗",
+    "type": "page",
+    "href": "https://connect.scintilla.network",
+    "newWindow": true
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://scintilla.network/contact",
     "newWindow": true
   }
 }
